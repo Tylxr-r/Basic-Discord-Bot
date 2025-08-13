@@ -1,5 +1,4 @@
 import discord
-from discord import app_commands
 
 class MyClient(discord.Client):
     async def on_ready(self):
@@ -42,4 +41,5 @@ with open("token.txt", "r") as f:
     TOKEN = f.read().strip()
 
 client = MyClient(intents=intents)
+
 client.run(TOKEN)
