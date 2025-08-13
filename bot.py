@@ -32,8 +32,6 @@ class MyClient(discord.Client):
         elif content == ("cm3"):
             await content_send("content")
 
-
-
 intents = discord.Intents.default()
 intents.message_content = True
 
